@@ -7,7 +7,6 @@ import {
   canRecover,
   choiceBlockers,
   choiceConsequences,
-  choiceDeltas,
   currentEventDef,
   dueItems,
   eventDay,
@@ -22,13 +21,13 @@ import { formatCents, previewChoice } from '../../campaign/money'
 import { fillName, type RoleNames } from '../../campaign/names'
 import { ASSET_NAMES, formatUnits, portfolioValue, unitsHeld } from '../../campaign/portfolio'
 import { ACCOUNT_NAMES, ROLES, pricesOn } from '../../campaign/roles'
-import { arrearsTotal, bal, chapterOf, chapterStart, netWorth, stat, type CampaignRun, type CurrentEvent, type Stats } from '../../campaign/run'
+import { arrearsTotal, bal, chapterOf, chapterStart, netWorth, stat, type CampaignRun, type CurrentEvent } from '../../campaign/run'
 import type { AssetId, ChoiceDef, EventDef, StatKey } from '../../campaign/types'
 import { eventScene } from '../../data/eventScenes'
 import { useActiveLife, useCampaign, useGameDispatch, useRoleNames } from '../../state/GameProvider'
 import type { CampaignOp } from '../../state/gameReducer'
 import { useGame } from '../../state/GameProvider'
-import { LedgerLine, StatChip, StatChips, statNames } from '../campaign/parts'
+import { LedgerLine, StatChips, statNames } from '../campaign/parts'
 import { LessonText, Question } from '../campaign/LessonView'
 import { Portrait } from '../lobby/Portrait'
 import { Icon } from '../ui/Icon'
@@ -390,16 +389,6 @@ function ReviewLesson({ ev }: { ev: EventDef }) {
 
 // ── Decide: scenario, story memory, four choices ──────────────────────────
 
-function projected(run: CampaignRun, deltas: Stats) {
-  return (Object.keys(deltas) as StatKey[])
-    .filter((k) => deltas[k])
-    .map((k) => {
-      const before = stat(run, k)
-      const after = Math.min(100, Math.max(0, before + (deltas[k] ?? 0)))
-      return { k, delta: after - before, authored: deltas[k] ?? 0, before, after }
-    })
-}
-
 function DecidePhase({ run, ev, cur, names, step }: { run: CampaignRun; ev: EventDef; cur: CurrentEvent; names: RoleNames; step: Step }) {
   const extras = useMemo(() => sceneExtras(run, ev), [run, ev])
   const blockers = choiceBlockers(run)
@@ -508,8 +497,6 @@ function ChoiceCard({
   onConfirm: () => void
 }) {
   const preview = previewChoice(previewState(run), choice)
-  const { deltas, notes } = choiceDeltas(run, ev, choice)
-  const stats = projected(run, deltas)
   const failed = preview.ops.find((o) => !o.ok)
   // A missing holding or closed brokerage isn't a shortage of money, so it isn't labeled as one.
   const unaffordable = failed?.op.op === 'spend' || (failed?.op.op === 'buy_up_to' && !failed.reason?.includes('brokerage'))
@@ -553,22 +540,12 @@ function ChoiceCard({
         </button>
         {open && (
           <div className="mt-2 rounded-[12px] border-2 border-ink bg-parch-100 px-3.5 py-3 text-ink">
+            {/* Stat effects stay hidden until the choice is made; the outcome shows them. */}
             <p className="text-[14px] font-semibold">{choice.reason}</p>
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {stats.length === 0 && <span className="text-[13px] font-bold text-ink-soft">No change to life stats.</span>}
-              {stats.map((s) => (
-                <StatChip key={s.k} stat={s.k} delta={s.delta} note={`${s.before} → ${s.after}${s.delta !== s.authored ? ', capped' : ''}`} />
-              ))}
-            </div>
-            {notes.map((n) => (
-              <p key={n} className="mt-2 text-[13px] font-extrabold">
-                {n}
-              </p>
-            ))}
             <button type="button" onClick={() => setWhy((w) => !w)} aria-expanded={why} className="mt-2 text-[12px] font-extrabold text-xp-700 underline underline-offset-2">
               How certain is this?
             </button>
-            {why && <p className="text-[12px] font-semibold text-ink-soft">In this story every number is exact: what you see here is what happens. Real life is less predictable.</p>}
+            {why && <p className="text-[12px] font-semibold text-ink-soft">In this story every money amount shown here is exact. How the choice affects your stats is revealed after you decide. Real life is less predictable.</p>}
             <button
               type="button"
               onClick={onConfirm}
