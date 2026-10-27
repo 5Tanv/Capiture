@@ -1,0 +1,38 @@
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+
+# Dependencies & build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local tool artifacts
+.playwright/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/config.local.json
+.claude/settings.local.json
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets.json
+credentials.json
+
+# Logs and OS clutter
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# AI assistant skills, agents and tool config: local only, not part of the game
+.agents/
+.claude/
+.codex/
+.impeccable/
+.vscode/mcp.json
+skills-lock.json

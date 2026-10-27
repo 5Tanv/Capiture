@@ -1,0 +1,5833 @@
+{
+  "schema_version": 2,
+  "categories": [
+    {
+      "id": "money",
+      "title": "Money & Budgeting",
+      "lesson_ids": [
+        "budget",
+        "needs_wants",
+        "cash_flow"
+      ]
+    },
+    {
+      "id": "banking",
+      "title": "Banking & Payments",
+      "lesson_ids": [
+        "banking",
+        "deposit_protection"
+      ]
+    },
+    {
+      "id": "saving",
+      "title": "Saving & Liquidity",
+      "lesson_ids": [
+        "emergency",
+        "saving_goal",
+        "liquidity"
+      ]
+    },
+    {
+      "id": "spending",
+      "title": "Spending & Consumer Choices",
+      "lesson_ids": [
+        "total_cost",
+        "subscriptions",
+        "college_resale"
+      ]
+    },
+    {
+      "id": "income",
+      "title": "Income, Work & Benefits",
+      "lesson_ids": [
+        "net_pay",
+        "negotiation",
+        "benefits",
+        "income_uncertainty",
+        "college_scholarship",
+        "college_financial_aid",
+        "college_human_capital",
+        "college_summer_plan"
+      ]
+    },
+    {
+      "id": "credit",
+      "title": "Credit & Credit Cards",
+      "lesson_ids": [
+        "credit",
+        "credit_report",
+        "minimum_payment"
+      ]
+    },
+    {
+      "id": "borrowing",
+      "title": "Loans & Debt",
+      "lesson_ids": [
+        "loan_terms",
+        "apr",
+        "debt_strategy",
+        "simple_interest"
+      ]
+    },
+    {
+      "id": "tax",
+      "title": "Taxes & Records",
+      "lesson_ids": [
+        "withholding",
+        "tax_reserve"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Scams & Financial Security",
+      "lesson_ids": [
+        "fraud",
+        "security",
+        "guaranteed_return"
+      ]
+    },
+    {
+      "id": "protection",
+      "title": "Insurance & Protection",
+      "lesson_ids": [
+        "insurance",
+        "deductible"
+      ]
+    },
+    {
+      "id": "housing",
+      "title": "Housing & Property",
+      "lesson_ids": [
+        "housing",
+        "lease",
+        "real_estate",
+        "college_shared_costs"
+      ]
+    },
+    {
+      "id": "investing",
+      "title": "Investing & Portfolios",
+      "lesson_ids": [
+        "saving_investing",
+        "risk_capacity",
+        "compound",
+        "stocks",
+        "dividends",
+        "bonds",
+        "funds",
+        "diversification",
+        "allocation",
+        "rebalancing",
+        "performance"
+      ]
+    },
+    {
+      "id": "markets",
+      "title": "Brokerage & Markets",
+      "lesson_ids": [
+        "brokerage",
+        "orders",
+        "fees"
+      ]
+    },
+    {
+      "id": "retirement",
+      "title": "Retirement Accounts",
+      "lesson_ids": [
+        "retirement",
+        "employer_match",
+        "roth_traditional",
+        "college_long_term_plan"
+      ]
+    },
+    {
+      "id": "business",
+      "title": "Business Finance",
+      "lesson_ids": [
+        "revenue_profit",
+        "fixed_variable",
+        "break_even",
+        "pricing",
+        "receivables",
+        "working_capital",
+        "debt_equity",
+        "dilution",
+        "separate_funds",
+        "balance_sheet",
+        "college_gig_income"
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Contracts & Financial Professionals",
+      "lesson_ids": [
+        "contracts",
+        "adviser"
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Financial Decision-Making",
+      "lesson_ids": [
+        "time_cost",
+        "research",
+        "market_behavior",
+        "sunk_cost",
+        "boundaries",
+        "college_preparation"
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Economics & Purchasing Power",
+      "lesson_ids": [
+        "inflation"
+      ]
+    },
+    {
+      "id": "planning",
+      "title": "Goals & Long-Term Planning",
+      "lesson_ids": [
+        "reflection",
+        "giving",
+        "beneficiaries",
+        "risk_review",
+        "college_housing"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "budget",
+      "version": 1,
+      "category_id": "money",
+      "title": "A Plan for Your Money",
+      "objective": "Explain a plan for your money and apply the concept to a financial comparison.",
+      "sentences": [
+        "A budget assigns money to needs, saving, and things you value.",
+        "Plan using money actually available rather than hoped-for income.",
+        "Choosing one use leaves less for another, which is an opportunity cost.",
+        "Adjust the plan when your circumstances change."
+      ],
+      "quiz": [
+        {
+          "prompt": "What does a budget do?",
+          "options": [
+            "Plans how available money is used",
+            "Guarantees more income",
+            "Removes every surprise"
+          ],
+          "answer_index": 0,
+          "explanation": "A budget connects resources and priorities.",
+          "id": "budget.v1.q1"
+        },
+        {
+          "prompt": "You have $200 and plan $150 of necessities; what remains?",
+          "options": [
+            "$350",
+            "$150",
+            "$50"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract necessities from available money.",
+          "id": "budget.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W101",
+          "chapter": 1,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B101",
+          "chapter": 1,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P101",
+          "chapter": 1,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C101",
+          "chapter": 1,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C108",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C109",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C111",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C113",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C302",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "banking",
+      "version": 1,
+      "category_id": "banking",
+      "title": "Choosing an Account",
+      "objective": "Explain choosing an account and apply the concept to a financial comparison.",
+      "sentences": [
+        "Checking supports frequent payments, while savings can hold money for later.",
+        "Compare fees, minimum balances, access, and conditions.",
+        "A debit card uses account funds rather than providing extra income.",
+        "Review statements and unfamiliar activity."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which detail matters when choosing checking?",
+          "options": [
+            "Card color alone",
+            "A promised stock return",
+            "Fees and access"
+          ],
+          "answer_index": 2,
+          "explanation": "Conditions affect cost and usability.",
+          "id": "banking.v1.q1"
+        },
+        {
+          "prompt": "A $5 monthly fee costs how much in 12 months?",
+          "options": [
+            "$17",
+            "$60",
+            "$5"
+          ],
+          "answer_index": 1,
+          "explanation": "Multiply the monthly fee by 12.",
+          "id": "banking.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W102",
+          "chapter": 1,
+          "slot": 2,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B102",
+          "chapter": 1,
+          "slot": 2,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P102",
+          "chapter": 1,
+          "slot": 2,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C102",
+          "chapter": 1,
+          "slot": 2,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "net_pay",
+      "version": 1,
+      "category_id": "income",
+      "title": "Gross Is Not Take-Home",
+      "objective": "Explain gross is not take-home and apply the concept to a financial comparison.",
+      "sentences": [
+        "Gross pay is earnings before deductions.",
+        "Net pay is what remains after deductions.",
+        "Use net pay when planning spendable money.",
+        "Review the pay statement and check hours or agreed compensation."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which amount is take-home pay?",
+          "options": [
+            "A borrowing limit",
+            "Net pay",
+            "Gross pay"
+          ],
+          "answer_index": 1,
+          "explanation": "Net pay reflects deductions.",
+          "id": "net_pay.v1.q1"
+        },
+        {
+          "prompt": "A fictional payment is $200 gross with $20 deductions; net is what?",
+          "options": [
+            "$180",
+            "$220",
+            "$200"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the example deductions; this is not a universal tax rate.",
+          "id": "net_pay.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W103",
+          "chapter": 1,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B103",
+          "chapter": 1,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P103",
+          "chapter": 1,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C103",
+          "chapter": 1,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C303",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "total_cost",
+      "version": 1,
+      "category_id": "spending",
+      "title": "Beyond the Sticker Price",
+      "objective": "Explain beyond the sticker price and apply the concept to a financial comparison.",
+      "sentences": [
+        "An advertised price may exclude required costs.",
+        "Include fees, maintenance, supplies, and practical restrictions.",
+        "Compare options that meet the same need.",
+        "The cheapest option is useful only if it actually works for you."
+      ],
+      "quiz": [
+        {
+          "prompt": "What belongs in a purchase comparison?",
+          "options": [
+            "Necessary extra costs",
+            "Only the headline price",
+            "Only the brand"
+          ],
+          "answer_index": 0,
+          "explanation": "Required costs change the real total.",
+          "id": "total_cost.v1.q1"
+        },
+        {
+          "prompt": "A $50 item needs a $10 required accessory; total is what?",
+          "options": [
+            "$50",
+            "$40",
+            "$60"
+          ],
+          "answer_index": 2,
+          "explanation": "Add the necessary accessory cost.",
+          "id": "total_cost.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W112",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B113",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P113",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C104",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C105",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C106",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C115",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C121",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C122",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "needs_wants",
+      "version": 1,
+      "category_id": "money",
+      "title": "Priorities Can Differ",
+      "objective": "Explain priorities can differ and apply the concept to a financial comparison.",
+      "sentences": [
+        "Needs support necessary living and responsibilities.",
+        "Wants can provide enjoyment and still deserve a place in a budget.",
+        "Circumstances change which expenses are urgent.",
+        "Compare a purchase with your own obligations rather than someone else's lifestyle."
+      ],
+      "quiz": [
+        {
+          "prompt": "Should everyone have exactly the same spending priorities?",
+          "options": [
+            "Yes, always",
+            "Only high earners can choose",
+            "No, circumstances differ"
+          ],
+          "answer_index": 2,
+          "explanation": "Needs and priorities depend on circumstances.",
+          "id": "needs_wants.v1.q1"
+        },
+        {
+          "prompt": "A $30 optional purchase leaves what from $80?",
+          "options": [
+            "$30",
+            "$50",
+            "$110"
+          ],
+          "answer_index": 1,
+          "explanation": "Subtract the purchase from available money.",
+          "id": "needs_wants.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W113",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B115",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P115",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "subscriptions",
+      "version": 1,
+      "category_id": "spending",
+      "title": "The Repeating Charge",
+      "objective": "Explain the repeating charge and apply the concept to a financial comparison.",
+      "sentences": [
+        "Subscriptions repeat under their terms until canceled.",
+        "A trial can turn into a paid renewal.",
+        "Compare ongoing cost with actual use and check cancellation rules.",
+        "Put renewal dates in a place you will review."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you check before a trial?",
+          "options": [
+            "The app icon",
+            "Renewal cost and cancellation",
+            "Only the word free"
+          ],
+          "answer_index": 1,
+          "explanation": "The future charge is part of the offer.",
+          "id": "subscriptions.v1.q1"
+        },
+        {
+          "prompt": "$8 monthly for three months totals what?",
+          "options": [
+            "$24",
+            "$8",
+            "$11"
+          ],
+          "answer_index": 0,
+          "explanation": "Multiply 8 by 3.",
+          "id": "subscriptions.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W115",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B116",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P116",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C112",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C311",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "emergency",
+      "version": 1,
+      "category_id": "saving",
+      "title": "A Cushion for Surprises",
+      "objective": "Explain a cushion for surprises and apply the concept to a financial comparison.",
+      "sentences": [
+        "An emergency fund holds accessible money for unplanned necessary expenses.",
+        "Using it appropriately is part of its purpose.",
+        "Compare repairs, replacements, and support before spending.",
+        "Rebuild the cushion at a pace that fits your situation."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which fits an emergency fund?",
+          "options": [
+            "An unexpected necessary repair",
+            "A planned gift",
+            "A guaranteed stock purchase"
+          ],
+          "answer_index": 0,
+          "explanation": "The fund is for unplanned necessary costs.",
+          "id": "emergency.v1.q1"
+        },
+        {
+          "prompt": "Using $40 from $100 saved leaves what?",
+          "options": [
+            "$140",
+            "$40",
+            "$60"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the expense from savings.",
+          "id": "emergency.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W107",
+          "chapter": 1,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B107",
+          "chapter": 1,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P107",
+          "chapter": 1,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C107",
+          "chapter": 1,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C209",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "saving_goal",
+      "version": 1,
+      "category_id": "saving",
+      "title": "Saving for a Known Cost",
+      "objective": "Explain saving for a known cost and apply the concept to a financial comparison.",
+      "sentences": [
+        "A sinking fund sets money aside for a predictable expense.",
+        "An emergency fund serves a different purpose.",
+        "Goal labels organize existing money rather than creating more.",
+        "Change the goal when costs or priorities change."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which is a sinking-fund goal?",
+          "options": [
+            "A surprise breakdown",
+            "An investment guarantee",
+            "A known annual bill"
+          ],
+          "answer_index": 2,
+          "explanation": "A planned expense can be saved for ahead of time.",
+          "id": "saving_goal.v1.q1"
+        },
+        {
+          "prompt": "A $300 target with $120 already saved has what gap?",
+          "options": [
+            "$120",
+            "$180",
+            "$420"
+          ],
+          "answer_index": 1,
+          "explanation": "Subtract progress from the target.",
+          "id": "saving_goal.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W116",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B117",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P117",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C207",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C319",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "time_cost",
+      "version": 1,
+      "category_id": "decisions",
+      "title": "Time Has a Cost Too",
+      "objective": "Explain time has a cost too and apply the concept to a financial comparison.",
+      "sentences": [
+        "Earning more can require more time or effort.",
+        "Compare extra income with obligations, rest, and other goals.",
+        "Paying for convenience can be reasonable when the saved time matters.",
+        "Neither working more nor spending less is automatically the best choice."
+      ],
+      "quiz": [
+        {
+          "prompt": "What belongs in an extra-work decision?",
+          "options": [
+            "Only what a friend does",
+            "Pay and existing commitments",
+            "Pay alone"
+          ],
+          "answer_index": 1,
+          "explanation": "Time and workload affect the choice.",
+          "id": "time_cost.v1.q1"
+        },
+        {
+          "prompt": "A $50 task requires $15 travel; what remains before other costs?",
+          "options": [
+            "$35",
+            "$65",
+            "$50"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the required travel expense.",
+          "id": "time_cost.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W117",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B118",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P118",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C116",
+          "chapter": 1,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C119",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C304",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C312",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "credit",
+      "version": 1,
+      "category_id": "credit",
+      "title": "Borrowing Is Not Income",
+      "objective": "Explain borrowing is not income and apply the concept to a financial comparison.",
+      "sentences": [
+        "Credit gives access to borrowed money under repayment terms.",
+        "A credit limit is not savings or income.",
+        "Purchases create obligations even if no cash leaves checking immediately.",
+        "Read the terms before deciding whether borrowing fits the need."
+      ],
+      "quiz": [
+        {
+          "prompt": "What is a credit limit?",
+          "options": [
+            "An amount available to borrow under terms",
+            "A gift",
+            "Money already saved"
+          ],
+          "answer_index": 0,
+          "explanation": "Borrowed money must be repaid.",
+          "id": "credit.v1.q1"
+        },
+        {
+          "prompt": "An $80 balance minus a $20 principal payment leaves what before new charges?",
+          "options": [
+            "$100",
+            "$0",
+            "$60"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the payment from the balance.",
+          "id": "credit.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W110",
+          "chapter": 1,
+          "slot": 7,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B110",
+          "chapter": 1,
+          "slot": 7,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P110",
+          "chapter": 1,
+          "slot": 7,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C110",
+          "chapter": 1,
+          "slot": 7,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "credit_report",
+      "version": 1,
+      "category_id": "credit",
+      "title": "Reports and Scores",
+      "objective": "Explain reports and scores and apply the concept to a financial comparison.",
+      "sentences": [
+        "A credit report records information about borrowing history.",
+        "A credit score summarizes selected report information using a scoring model.",
+        "Review reports for accuracy and dispute errors through legitimate channels.",
+        "No single action guarantees a particular score change."
+      ],
+      "quiz": [
+        {
+          "prompt": "Are a report and a score identical?",
+          "options": [
+            "Yes",
+            "Only for students",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "A report contains information; a score summarizes selected information.",
+          "id": "credit_report.v1.q1"
+        },
+        {
+          "prompt": "What should you do about an unfamiliar account?",
+          "options": [
+            "Ignore it forever",
+            "Verify and dispute inaccurate information",
+            "Pay a stranger to erase it immediately"
+          ],
+          "answer_index": 1,
+          "explanation": "Use official channels to investigate.",
+          "id": "credit_report.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W118",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B119",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P119",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "minimum_payment",
+      "version": 1,
+      "category_id": "credit",
+      "title": "The Minimum Is Not the Total",
+      "objective": "Explain the minimum is not the total and apply the concept to a financial comparison.",
+      "sentences": [
+        "A minimum payment is the required minimum for a statement, not full repayment.",
+        "Paying only it leaves a balance and may lead to interest.",
+        "Purchase grace periods depend on the agreement and balance status.",
+        "When applicable, full statement payment by the due date can avoid purchase interest."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does paying the minimum erase all debt?",
+          "options": [
+            "Only on weekends",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "An unpaid balance remains.",
+          "id": "minimum_payment.v1.q1"
+        },
+        {
+          "prompt": "A $100 statement minus $25 paid leaves what before interest?",
+          "options": [
+            "$75",
+            "$125",
+            "$0"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the payment; interest is separate.",
+          "id": "minimum_payment.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "credit"
+      ],
+      "source_ids": [
+        "cfpb_grace"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W119",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B121",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P121",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "loan_terms",
+      "version": 1,
+      "category_id": "borrowing",
+      "title": "Read the Whole Loan",
+      "objective": "Explain read the whole loan and apply the concept to a financial comparison.",
+      "sentences": [
+        "A loan has principal, costs, a term, and repayment conditions.",
+        "Compare total repayment rather than the smallest advertised payment.",
+        "Collateral and missed-payment consequences matter too.",
+        "Borrowing can solve a need while reducing future flexibility."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should a loan comparison include?",
+          "options": [
+            "Total repayment and conditions",
+            "Only the first payment",
+            "Only the lender logo"
+          ],
+          "answer_index": 0,
+          "explanation": "The whole commitment affects cost and risk.",
+          "id": "loan_terms.v1.q1"
+        },
+        {
+          "prompt": "Four payments of $30 total what?",
+          "options": [
+            "$30",
+            "$90",
+            "$120"
+          ],
+          "answer_index": 2,
+          "explanation": "Multiply the payment by four.",
+          "id": "loan_terms.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W114",
+          "chapter": 1,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B114",
+          "chapter": 1,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P114",
+          "chapter": 1,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C114",
+          "chapter": 1,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C221",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "apr",
+      "version": 1,
+      "category_id": "borrowing",
+      "title": "Rates, Fees, and Total Cost",
+      "objective": "Explain rates, fees, and total cost and apply the concept to a financial comparison.",
+      "sentences": [
+        "APR is a borrowing-cost measure expressed annually and can include certain fees under applicable rules.",
+        "Compare equivalent offers and read what is included.",
+        "A lower payment can still mean a longer and more expensive loan.",
+        "Calculate total repayment for the actual term."
+      ],
+      "quiz": [
+        {
+          "prompt": "Can a smaller monthly payment mean higher total cost?",
+          "options": [
+            "Never",
+            "Only with cash purchases",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "A longer repayment term can increase total cost.",
+          "id": "apr.v1.q1"
+        },
+        {
+          "prompt": "Twelve payments of $20 total what?",
+          "options": [
+            "$120",
+            "$240",
+            "$32"
+          ],
+          "answer_index": 1,
+          "explanation": "Multiply 12 by 20 before adding separately disclosed costs.",
+          "id": "apr.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "loan_terms"
+      ],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W121",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B122",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P122",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "debt_strategy",
+      "version": 1,
+      "category_id": "borrowing",
+      "title": "Making a Repayment Plan",
+      "objective": "Explain making a repayment plan and apply the concept to a financial comparison.",
+      "sentences": [
+        "List balances, rates, and required payments before prioritizing debt.",
+        "Avalanche targets higher-rate debt first, while snowball targets smaller balances first.",
+        "Keep necessary payments and living costs in the plan.",
+        "Seek legitimate help when the schedule is not affordable."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which strategy prioritizes higher interest rates?",
+          "options": [
+            "Random selection",
+            "Avalanche",
+            "Snowball"
+          ],
+          "answer_index": 1,
+          "explanation": "Avalanche targets the highest-rate balance first.",
+          "id": "debt_strategy.v1.q1"
+        },
+        {
+          "prompt": "A $200 balance with $50 of principal repaid becomes what?",
+          "options": [
+            "$150",
+            "$250",
+            "$50"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the principal repayment.",
+          "id": "debt_strategy.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W108",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B123",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P123",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "fraud",
+      "version": 1,
+      "category_id": "security",
+      "title": "Pause and Verify",
+      "objective": "Explain pause and verify and apply the concept to a financial comparison.",
+      "sentences": [
+        "Scams often use urgency, secrecy, or impersonation.",
+        "Verify requests through an independent trusted channel.",
+        "Do not share passwords or verification codes with callers or messages.",
+        "A familiar name does not prove a request is genuine."
+      ],
+      "quiz": [
+        {
+          "prompt": "How should you verify a suspicious request?",
+          "options": [
+            "Contact the organization independently",
+            "Use only its payment link",
+            "Share a login code"
+          ],
+          "answer_index": 0,
+          "explanation": "An independent route avoids trusting the sender.",
+          "id": "fraud.v1.q1"
+        },
+        {
+          "prompt": "Does a message using your name prove it is genuine?",
+          "options": [
+            "Yes",
+            "Only if it says urgent",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "Personal details can be copied.",
+          "id": "fraud.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W120",
+          "chapter": 1,
+          "slot": 12,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B120",
+          "chapter": 1,
+          "slot": 12,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P120",
+          "chapter": 1,
+          "slot": 12,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C120",
+          "chapter": 1,
+          "slot": 12,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C210",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C213",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "version": 1,
+      "category_id": "security",
+      "title": "Protecting Account Access",
+      "objective": "Explain protecting account access and apply the concept to a financial comparison.",
+      "sentences": [
+        "Use strong unique passwords and available multifactor authentication.",
+        "Keep recovery information and verification codes private.",
+        "Review unfamiliar activity through official channels.",
+        "Security habits reduce risk without making fraud impossible."
+      ],
+      "quiz": [
+        {
+          "prompt": "Should a caller receive your login code?",
+          "options": [
+            "Yes if polite",
+            "Yes if they know your name",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "Codes protect account access.",
+          "id": "security.v1.q1"
+        },
+        {
+          "prompt": "What is a useful security habit?",
+          "options": [
+            "Posting recovery codes",
+            "Reviewing unfamiliar transactions",
+            "Reusing one password everywhere"
+          ],
+          "answer_index": 1,
+          "explanation": "Reviewing activity can reveal problems.",
+          "id": "security.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W122",
+          "chapter": 1,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B124",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P124",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C222",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "withholding",
+      "version": 1,
+      "category_id": "tax",
+      "title": "Withholding and the Final Bill",
+      "objective": "Explain withholding and the final bill and apply the concept to a financial comparison.",
+      "sentences": [
+        "Withholding pays toward a possible tax liability during the year.",
+        "A return reconciles applicable tax with payments and other relevant information.",
+        "A refund is not guaranteed extra earnings.",
+        "Keep records and use reliable help for your situation."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does withholding always equal final tax liability?",
+          "options": [
+            "Only for employees",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "The final result depends on the full applicable information.",
+          "id": "withholding.v1.q1"
+        },
+        {
+          "prompt": "In a simplified example, $120 paid toward a $100 bill leaves what difference?",
+          "options": [
+            "$20 excess payment",
+            "$220 owed",
+            "$100 extra income"
+          ],
+          "answer_index": 0,
+          "explanation": "The example has paid $20 more than that bill.",
+          "id": "withholding.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W104",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B202",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P106",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C305",
+          "chapter": 3,
+          "slot": 3,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "negotiation",
+      "version": 1,
+      "category_id": "income",
+      "title": "Comparing an Offer",
+      "objective": "Explain comparing an offer and apply the concept to a financial comparison.",
+      "sentences": [
+        "Compensation includes more than a headline salary.",
+        "Compare expected take-home pay, costs, hours, benefits, and reliability.",
+        "Ask for clear written terms and prepare questions.",
+        "A larger number is not automatically a better fit."
+      ],
+      "quiz": [
+        {
+          "prompt": "What belongs in comparing offers?",
+          "options": [
+            "Pay, costs, benefits, and hours",
+            "The title alone",
+            "Gross pay alone"
+          ],
+          "answer_index": 0,
+          "explanation": "The whole arrangement determines its value.",
+          "id": "negotiation.v1.q1"
+        },
+        {
+          "prompt": "$200 extra take-home with $80 added travel leaves what?",
+          "options": [
+            "$280",
+            "$80",
+            "$120"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the additional required cost.",
+          "id": "negotiation.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W106",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B203",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P202",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C202",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C203",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C223",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C224",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "version": 1,
+      "category_id": "income",
+      "title": "Benefits Are Part of Compensation",
+      "objective": "Explain benefits are part of compensation and apply the concept to a financial comparison.",
+      "sentences": [
+        "Benefits can include insurance, paid leave, and retirement contributions.",
+        "Eligibility, employee costs, and restrictions vary.",
+        "Compare the benefits you can actually use with cash compensation.",
+        "Read the plan rather than assuming every employer offers the same terms."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you check in a benefit?",
+          "options": [
+            "Only its name",
+            "Only a coworker's assumptions",
+            "Eligibility and employee costs"
+          ],
+          "answer_index": 2,
+          "explanation": "The terms determine actual usefulness.",
+          "id": "benefits.v1.q1"
+        },
+        {
+          "prompt": "A benefit costs you $20 each of four pay periods; total is what?",
+          "options": [
+            "$24",
+            "$80",
+            "$20"
+          ],
+          "answer_index": 1,
+          "explanation": "Multiply the employee cost by four.",
+          "id": "benefits.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W105",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B204",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P203",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "insurance",
+      "version": 1,
+      "category_id": "protection",
+      "title": "What Coverage Protects",
+      "objective": "Explain what coverage protects and apply the concept to a financial comparison.",
+      "sentences": [
+        "Insurance covers specified risks under policy terms.",
+        "Premiums pay for coverage, while limits and exclusions define its boundaries.",
+        "A deductible may be your share of a covered loss.",
+        "Compare the policy with the risk and what you could afford to lose."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a policy cover every possible loss?",
+          "options": [
+            "Only when expensive",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "Coverage depends on the actual terms.",
+          "id": "insurance.v1.q1"
+        },
+        {
+          "prompt": "A simplified covered $300 loss with a $100 deductible leaves insurer payment of what?",
+          "options": [
+            "$200",
+            "$300",
+            "$100"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the deductible, assuming sufficient applicable coverage.",
+          "id": "insurance.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W309",
+          "chapter": 3,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B309",
+          "chapter": 3,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P309",
+          "chapter": 3,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C309",
+          "chapter": 3,
+          "slot": 5,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "deductible",
+      "version": 1,
+      "category_id": "protection",
+      "title": "Choosing a Deductible",
+      "objective": "Explain choosing a deductible and apply the concept to a financial comparison.",
+      "sentences": [
+        "A deductible affects what you may pay on a covered claim.",
+        "A lower premium may come with a higher deductible or other differences.",
+        "Compare equivalent coverage and your available reserves.",
+        "A cheap premium is not the full risk cost."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you compare alongside premium?",
+          "options": [
+            "Deductible, coverage, and reserves",
+            "Only the color of the document",
+            "Only an advertisement"
+          ],
+          "answer_index": 0,
+          "explanation": "Lower price can shift more risk to you.",
+          "id": "deductible.v1.q1"
+        },
+        {
+          "prompt": "A deductible rises from $100 to $250; increase is what?",
+          "options": [
+            "$350",
+            "$100",
+            "$150"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the old deductible from the new one.",
+          "id": "deductible.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W123",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B206",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P109",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "housing",
+      "version": 1,
+      "category_id": "housing",
+      "title": "Renting and Buying",
+      "objective": "Explain renting and buying and apply the concept to a financial comparison.",
+      "sentences": [
+        "Housing costs include more than rent or a mortgage payment.",
+        "Include taxes, insurance, utilities, upkeep, fees, and moving costs where applicable.",
+        "Buying and renting offer different commitments and flexibility.",
+        "Compare the full cost with your expected time horizon."
+      ],
+      "quiz": [
+        {
+          "prompt": "What belongs in housing affordability?",
+          "options": [
+            "Rent or mortgage alone",
+            "Only decoration costs",
+            "Full ongoing and upfront costs"
+          ],
+          "answer_index": 2,
+          "explanation": "Other necessary housing expenses matter.",
+          "id": "housing.v1.q1"
+        },
+        {
+          "prompt": "$500 rent plus $80 utilities totals what?",
+          "options": [
+            "$420",
+            "$580",
+            "$500"
+          ],
+          "answer_index": 1,
+          "explanation": "Add the required costs.",
+          "id": "housing.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W109",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B207",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P111",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "lease",
+      "version": 1,
+      "category_id": "housing",
+      "title": "Before You Sign",
+      "objective": "Explain before you sign and apply the concept to a financial comparison.",
+      "sentences": [
+        "A lease or service contract creates obligations under its terms.",
+        "Review duration, payments, deposits, exit rules, and responsibility for damage.",
+        "Ask for clarification before committing.",
+        "A refundable deposit still ties up accessible money."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does refundable mean a deposit remains spendable while held?",
+          "options": [
+            "Only if large",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "Money held as a deposit is not currently available to spend.",
+          "id": "lease.v1.q1"
+        },
+        {
+          "prompt": "$700 upfront rent plus a $300 deposit requires what cash?",
+          "options": [
+            "$1,000",
+            "$700",
+            "$400"
+          ],
+          "answer_index": 0,
+          "explanation": "Add both upfront cash requirements; they may have different accounting treatment.",
+          "id": "lease.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W111",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B209",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P112",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "version": 1,
+      "category_id": "planning",
+      "title": "Review Before the Next Step",
+      "objective": "Explain review before the next step and apply the concept to a financial comparison.",
+      "sentences": [
+        "Review available money, investments, debts, and upcoming commitments together.",
+        "Compare results with your original plan and circumstances.",
+        "Separate transfers from income and investment value changes from cash.",
+        "Choose an achievable next step rather than a perfect-looking balance."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should a review include?",
+          "options": [
+            "Assets, obligations, and goals",
+            "Cash alone",
+            "FiCoins alone"
+          ],
+          "answer_index": 0,
+          "explanation": "Different measures reveal different parts of the situation.",
+          "id": "reflection.v1.q1"
+        },
+        {
+          "prompt": "$100 checking plus $150 savings equals what before other assets and debts?",
+          "options": [
+            "$50",
+            "$150",
+            "$250"
+          ],
+          "answer_index": 2,
+          "explanation": "Add the accounts without double counting transfers.",
+          "id": "reflection.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W125",
+          "chapter": 1,
+          "slot": 15,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B125",
+          "chapter": 1,
+          "slot": 15,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P125",
+          "chapter": 1,
+          "slot": 15,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C125",
+          "chapter": 1,
+          "slot": 15,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C320",
+          "chapter": 3,
+          "slot": 10,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "cash_flow",
+      "version": 1,
+      "category_id": "money",
+      "title": "Timing Can Change the Answer",
+      "objective": "Explain timing can change the answer and apply the concept to a financial comparison.",
+      "sentences": [
+        "Cash flow tracks when money arrives and leaves.",
+        "A profitable month can still have a shortage before payment arrives.",
+        "Put income and bill dates on the same calendar.",
+        "A delayed payment is not cash you can already spend."
+      ],
+      "quiz": [
+        {
+          "prompt": "Can a positive monthly total hide a temporary shortage?",
+          "options": [
+            "No",
+            "Only for students",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "Payment timing can leave a gap.",
+          "id": "cash_flow.v1.q1"
+        },
+        {
+          "prompt": "$100 available with an $80 bill before payday leaves what?",
+          "options": [
+            "$80",
+            "$20",
+            "$180"
+          ],
+          "answer_index": 1,
+          "explanation": "Only current available money covers that bill.",
+          "id": "cash_flow.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W201",
+          "chapter": 2,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B201",
+          "chapter": 2,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P201",
+          "chapter": 2,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C301",
+          "chapter": 3,
+          "slot": 1,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "inflation",
+      "version": 1,
+      "category_id": "economy",
+      "title": "What Money Can Buy",
+      "objective": "Explain what money can buy and apply the concept to a financial comparison.",
+      "sentences": [
+        "Inflation is a rise in the general price level.",
+        "Personal expenses can change differently from the overall measure.",
+        "If relevant prices rise while your money stays fixed, purchasing power falls.",
+        "Review actual costs instead of assuming pay rises at the same rate."
+      ],
+      "quiz": [
+        {
+          "prompt": "What happens when prices rise but available money does not?",
+          "options": [
+            "Nothing can change",
+            "Purchasing power falls",
+            "Purchasing power must rise"
+          ],
+          "answer_index": 1,
+          "explanation": "The same money buys less of the affected goods.",
+          "id": "inflation.v1.q1"
+        },
+        {
+          "prompt": "A $10 price rises to $11; percentage rise is what?",
+          "options": [
+            "10 percent",
+            "1 percent",
+            "50 percent"
+          ],
+          "answer_index": 0,
+          "explanation": "A $1 rise is one tenth of $10.",
+          "id": "inflation.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W124",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B210",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P204",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C306",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "saving_investing",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Soon or Later?",
+      "objective": "Explain soon or later? and apply the concept to a financial comparison.",
+      "sentences": [
+        "Savings and investments serve different goals.",
+        "Volatile assets can fall when money is needed soon.",
+        "A longer horizon may allow more time for fluctuations but does not guarantee profit.",
+        "Match risk with when and why you need the money."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which money is poorly suited to volatile stocks?",
+          "options": [
+            "Next month's necessary bill money",
+            "A flexible distant goal",
+            "Money not needed soon"
+          ],
+          "answer_index": 0,
+          "explanation": "Near-term obligations need reliable access and value.",
+          "id": "saving_investing.v1.q1"
+        },
+        {
+          "prompt": "Can an investment lose value?",
+          "options": [
+            "No if popular",
+            "No after one week",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "Investment results are uncertain.",
+          "id": "saving_investing.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W205",
+          "chapter": 2,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B205",
+          "chapter": 2,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P205",
+          "chapter": 2,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C208",
+          "chapter": 2,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C307",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "risk_capacity",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Willing Versus Able",
+      "objective": "Explain willing versus able and apply the concept to a financial comparison.",
+      "sentences": [
+        "Risk tolerance is how comfortable you feel with uncertainty.",
+        "Risk capacity is how much loss your finances can withstand.",
+        "They can differ even for the same person.",
+        "Consider goals, obligations, support, and time horizon before taking risk."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does feeling comfortable prove you can afford a loss?",
+          "options": [
+            "Yes",
+            "Only for high earners",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "Willingness and financial capacity are different.",
+          "id": "risk_capacity.v1.q1"
+        },
+        {
+          "prompt": "A $100 holding falls 20 percent; value becomes what?",
+          "options": [
+            "$20",
+            "$80",
+            "$120"
+          ],
+          "answer_index": 1,
+          "explanation": "A 20 percent loss is $20.",
+          "id": "risk_capacity.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W202",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B211",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P206",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "compound",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Growth on Earlier Growth",
+      "objective": "Explain growth on earlier growth and apply the concept to a financial comparison.",
+      "sentences": [
+        "Compounding includes returns on earlier returns.",
+        "Time, contributions, costs, and the actual sequence of returns affect outcomes.",
+        "Real investments do not grow at a fixed guaranteed rate.",
+        "A calculator illustrates assumptions rather than predicting your future."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a fixed-rate investment illustration guarantee that result?",
+          "options": [
+            "Only over ten years",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "The illustration depends on assumptions.",
+          "id": "compound.v1.q1"
+        },
+        {
+          "prompt": "Hypothetically, $100 growing 10 percent twice becomes what?",
+          "options": [
+            "$121",
+            "$120",
+            "$110"
+          ],
+          "answer_index": 0,
+          "explanation": "100 becomes 110, then 121.",
+          "id": "compound.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W203",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B213",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P207",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "stocks",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Owning a Share",
+      "objective": "Explain owning a share and apply the concept to a financial comparison.",
+      "sentences": [
+        "A stock represents ownership in a company.",
+        "Prices change as buyers and sellers reassess the business and expectations.",
+        "Some companies pay dividends, but payments can change or stop.",
+        "One company exposes you to company-specific risk."
+      ],
+      "quiz": [
+        {
+          "prompt": "What does a share represent?",
+          "options": [
+            "Ownership in a company",
+            "A bank deposit",
+            "Guaranteed repayment"
+          ],
+          "answer_index": 0,
+          "explanation": "Common shares are an ownership interest.",
+          "id": "stocks.v1.q1"
+        },
+        {
+          "prompt": "A share moves from $20 to $15; change is what?",
+          "options": [
+            "Plus $5",
+            "Minus $20",
+            "Minus $5"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the original price from the new price.",
+          "id": "stocks.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "saving_investing"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W208",
+          "chapter": 2,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B208",
+          "chapter": 2,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P208",
+          "chapter": 2,
+          "slot": 5,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C212",
+          "chapter": 2,
+          "slot": 7,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "dividends",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Look at Total Return",
+      "objective": "Explain look at total return and apply the concept to a financial comparison.",
+      "sentences": [
+        "A dividend distributes value to holders under the investment's terms.",
+        "It can change or stop.",
+        "Total return includes distributions and market value changes.",
+        "A large yield alone does not establish safety or suitability."
+      ],
+      "quiz": [
+        {
+          "prompt": "What belongs in total return?",
+          "options": [
+            "Dividends alone",
+            "Only the original price",
+            "Income and price change"
+          ],
+          "answer_index": 2,
+          "explanation": "Both components matter.",
+          "id": "dividends.v1.q1"
+        },
+        {
+          "prompt": "A holding loses $5 in value and pays $2; combined change is what?",
+          "options": [
+            "Plus $2",
+            "Minus $3",
+            "Plus $7"
+          ],
+          "answer_index": 1,
+          "explanation": "Add negative 5 and positive 2 before costs.",
+          "id": "dividends.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W204",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B214",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P209",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C217",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "bonds",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Lending Through a Bond",
+      "objective": "Explain lending through a bond and apply the concept to a financial comparison.",
+      "sentences": [
+        "A bond is a debt investment with specified obligations.",
+        "Interest, maturity, default risk, and price changes all matter.",
+        "Selling before maturity can produce a loss or gain.",
+        "A bond fund differs from holding one bond to maturity."
+      ],
+      "quiz": [
+        {
+          "prompt": "A bond generally represents what?",
+          "options": [
+            "A guaranteed lottery prize",
+            "Lending to an issuer",
+            "Common stock ownership"
+          ],
+          "answer_index": 1,
+          "explanation": "Bonds are debt investments.",
+          "id": "bonds.v1.q1"
+        },
+        {
+          "prompt": "$4 annual interest on $100 principal is what percentage?",
+          "options": [
+            "4 percent",
+            "40 percent",
+            "104 percent"
+          ],
+          "answer_index": 0,
+          "explanation": "Divide 4 by 100; this is only a sample.",
+          "id": "bonds.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W206",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B216",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P210",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C308",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "funds",
+      "version": 1,
+      "category_id": "investing",
+      "title": "What a Fund Holds",
+      "objective": "Explain what a fund holds and apply the concept to a financial comparison.",
+      "sentences": [
+        "A fund pools money to hold investments.",
+        "ETFs and mutual funds are structures, while indexing describes a strategy.",
+        "Check holdings, purpose, risk, and costs.",
+        "A narrow fund can remain concentrated despite owning several assets."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does every ETF provide broad diversification?",
+          "options": [
+            "No",
+            "Yes",
+            "Only with a short name"
+          ],
+          "answer_index": 0,
+          "explanation": "The actual holdings determine concentration.",
+          "id": "funds.v1.q1"
+        },
+        {
+          "prompt": "What does an index strategy aim to do?",
+          "options": [
+            "Guarantee profit",
+            "Avoid every decline",
+            "Track a specified index"
+          ],
+          "answer_index": 2,
+          "explanation": "Tracking does not guarantee a return.",
+          "id": "funds.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "stocks"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W212",
+          "chapter": 2,
+          "slot": 7,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B212",
+          "chapter": 2,
+          "slot": 7,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P212",
+          "chapter": 2,
+          "slot": 7,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "diversification",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Spreading Exposure",
+      "objective": "Explain spreading exposure and apply the concept to a financial comparison.",
+      "sentences": [
+        "Diversification spreads exposure among different investments.",
+        "It can reduce some risks without preventing all losses.",
+        "Several funds can overlap heavily.",
+        "Look through the labels to understand the underlying holdings."
+      ],
+      "quiz": [
+        {
+          "prompt": "Can diversified investments still lose value?",
+          "options": [
+            "No",
+            "Only without dividends",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "Diversification is not a guarantee against loss.",
+          "id": "diversification.v1.q1"
+        },
+        {
+          "prompt": "Two funds both concentrated in the same sector may have what issue?",
+          "options": [
+            "No relationship",
+            "Overlapping risk",
+            "Guaranteed safety"
+          ],
+          "answer_index": 1,
+          "explanation": "Different labels can hide similar exposure.",
+          "id": "diversification.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "funds"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W215",
+          "chapter": 2,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B215",
+          "chapter": 2,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P215",
+          "chapter": 2,
+          "slot": 9,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C215",
+          "chapter": 2,
+          "slot": 9,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "brokerage",
+      "version": 1,
+      "category_id": "markets",
+      "title": "The Account and the Investment",
+      "objective": "Explain the account and the investment and apply the concept to a financial comparison.",
+      "sentences": [
+        "A brokerage account holds cash and investments.",
+        "Funding it does not automatically buy a holding.",
+        "Cash accounts use available funds while margin involves borrowing and additional risk.",
+        "Brokerage protection does not cover ordinary market losses."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is a brokerage account itself a stock?",
+          "options": [
+            "Only when funded",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "The account is a container.",
+          "id": "brokerage.v1.q1"
+        },
+        {
+          "prompt": "What does margin add?",
+          "options": [
+            "Borrowing and added risk",
+            "Guaranteed gain",
+            "Deposit insurance for stocks"
+          ],
+          "answer_index": 0,
+          "explanation": "Borrowing can magnify losses.",
+          "id": "brokerage.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "saving_investing"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W218",
+          "chapter": 2,
+          "slot": 11,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B218",
+          "chapter": 2,
+          "slot": 11,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P218",
+          "chapter": 2,
+          "slot": 11,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C218",
+          "chapter": 2,
+          "slot": 11,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "orders",
+      "version": 1,
+      "category_id": "markets",
+      "title": "Market or Limit?",
+      "objective": "Explain market or limit? and apply the concept to a financial comparison.",
+      "sentences": [
+        "A market order prioritizes execution without guaranteeing the displayed price.",
+        "A limit order sets a price condition and may not fill.",
+        "Understand the order before confirming.",
+        "An unfilled order creates no holding."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which order specifies a price condition?",
+          "options": [
+            "Limit",
+            "Market",
+            "Savings transfer"
+          ],
+          "answer_index": 0,
+          "explanation": "A limit controls the acceptable buy or sell price.",
+          "id": "orders.v1.q1"
+        },
+        {
+          "prompt": "Can a limit order remain unfilled?",
+          "options": [
+            "No",
+            "Only if profitable",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "The market may not meet its condition.",
+          "id": "orders.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "brokerage"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W207",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B217",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P211",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C219",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C220",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "fees",
+      "version": 1,
+      "category_id": "markets",
+      "title": "Small Fees Add Up",
+      "objective": "Explain small fees add up and apply the concept to a financial comparison.",
+      "sentences": [
+        "Fees reduce what an investor retains.",
+        "Percentage and fixed charges can affect small and large accounts differently.",
+        "Compare equivalent services and holdings.",
+        "Lower cost does not remove market risk."
+      ],
+      "quiz": [
+        {
+          "prompt": "What do fees do to retained returns?",
+          "options": [
+            "Guarantee them",
+            "Eliminate risk",
+            "Reduce them"
+          ],
+          "answer_index": 2,
+          "explanation": "Fees are costs.",
+          "id": "fees.v1.q1"
+        },
+        {
+          "prompt": "One percent of $1,000 is what?",
+          "options": [
+            "$1",
+            "$10",
+            "$100"
+          ],
+          "answer_index": 1,
+          "explanation": "One percent is one part in one hundred.",
+          "id": "fees.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W209",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B219",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P108",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C216",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "version": 1,
+      "category_id": "decisions",
+      "title": "Check the Source",
+      "objective": "Explain check the source and apply the concept to a financial comparison.",
+      "sentences": [
+        "A confident claim is not proof.",
+        "Review evidence, uncertainty, compensation, and conflicts of interest.",
+        "Compare with independent reliable sources.",
+        "Another person's goals may differ from yours."
+      ],
+      "quiz": [
+        {
+          "prompt": "Why check a promoter's compensation?",
+          "options": [
+            "To guarantee profit",
+            "To identify possible conflicts",
+            "To guarantee they are wrong"
+          ],
+          "answer_index": 1,
+          "explanation": "Incentives can influence a claim.",
+          "id": "research.v1.q1"
+        },
+        {
+          "prompt": "Does follower count prove suitability?",
+          "options": [
+            "No",
+            "Yes",
+            "Only above one million"
+          ],
+          "answer_index": 0,
+          "explanation": "Popularity is not evidence of suitability.",
+          "id": "research.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W210",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B220",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P213",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C214",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "market_behavior",
+      "version": 1,
+      "category_id": "decisions",
+      "title": "A Price Move Is Not a Plan",
+      "objective": "Explain a price move is not a plan and apply the concept to a financial comparison.",
+      "sentences": [
+        "A recent price change does not establish what comes next.",
+        "Revisit your goal, time horizon, and need for cash before trading.",
+        "Holding and selling both involve trade-offs.",
+        "No reasonable decision guarantees a favorable outcome."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a recent gain guarantee another?",
+          "options": [
+            "No",
+            "Yes",
+            "Only for famous companies"
+          ],
+          "answer_index": 0,
+          "explanation": "Past movements do not determine future results.",
+          "id": "market_behavior.v1.q1"
+        },
+        {
+          "prompt": "A $20 holding is worth $18; current change is what?",
+          "options": [
+            "Plus $2",
+            "Minus $18",
+            "Minus $2"
+          ],
+          "answer_index": 2,
+          "explanation": "Compare current value with the original value.",
+          "id": "market_behavior.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W211",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B221",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P214",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C313",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C314",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C315",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "retirement",
+      "version": 1,
+      "category_id": "retirement",
+      "title": "Accounts for a Future Goal",
+      "objective": "Explain accounts for a future goal and apply the concept to a financial comparison.",
+      "sentences": [
+        "Retirement planning prepares for spending beyond current earning years.",
+        "Account types have eligibility, tax, contribution, and withdrawal rules.",
+        "An account may hold investments rather than being an investment itself.",
+        "Verify applicable rules and choose holdings deliberately."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is a retirement account identical to a particular fund?",
+          "options": [
+            "Yes",
+            "Only after retirement",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "The account and holdings are different.",
+          "id": "retirement.v1.q1"
+        },
+        {
+          "prompt": "Does contributing cash automatically specify how it is invested?",
+          "options": [
+            "Only on payday",
+            "Not necessarily",
+            "Always"
+          ],
+          "answer_index": 1,
+          "explanation": "Account funding and investment selection can be separate steps.",
+          "id": "retirement.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W225",
+          "chapter": 2,
+          "slot": 15,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B225",
+          "chapter": 2,
+          "slot": 15,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P225",
+          "chapter": 2,
+          "slot": 15,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "employer_match",
+      "version": 1,
+      "category_id": "retirement",
+      "title": "Understand the Match",
+      "objective": "Explain understand the match and apply the concept to a financial comparison.",
+      "sentences": [
+        "An employer may add retirement contributions under a plan formula.",
+        "Eligibility, contribution requirements, and vesting vary.",
+        "Read the actual plan before counting benefits.",
+        "A match does not remove investment risk or every other financial priority."
+      ],
+      "quiz": [
+        {
+          "prompt": "What must you check before counting a match?",
+          "options": [
+            "Only the account logo",
+            "Plan formula and eligibility",
+            "Only a coworker's guess"
+          ],
+          "answer_index": 1,
+          "explanation": "The plan defines the contribution.",
+          "id": "employer_match.v1.q1"
+        },
+        {
+          "prompt": "A fictional plan matches half of a qualifying $100 contribution; match is what?",
+          "options": [
+            "$50",
+            "$100",
+            "$150"
+          ],
+          "answer_index": 0,
+          "explanation": "Half of 100 is 50.",
+          "id": "employer_match.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "retirement"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W213",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B222",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P216",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "roth_traditional",
+      "version": 1,
+      "category_id": "retirement",
+      "title": "Tax Timing in Retirement Accounts",
+      "objective": "Explain tax timing in retirement accounts and apply the concept to a financial comparison.",
+      "sentences": [
+        "Traditional and Roth arrangements differ in tax treatment.",
+        "Eligibility and qualified withdrawal rules matter.",
+        "Which is suitable depends on circumstances and future uncertainty.",
+        "Verify current rules rather than assuming one always wins."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is one tax treatment best for everyone?",
+          "options": [
+            "No",
+            "Yes",
+            "Only for celebrities"
+          ],
+          "answer_index": 0,
+          "explanation": "Circumstances and applicable rules differ.",
+          "id": "roth_traditional.v1.q1"
+        },
+        {
+          "prompt": "What should you verify before using an account?",
+          "options": [
+            "Only a nickname",
+            "Only recent fund returns",
+            "Eligibility and tax rules"
+          ],
+          "answer_index": 2,
+          "explanation": "Account rules affect the decision.",
+          "id": "roth_traditional.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "retirement"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W214",
+          "chapter": 2,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B223",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P217",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "allocation",
+      "version": 1,
+      "category_id": "investing",
+      "title": "A Mix That Fits the Goal",
+      "objective": "Explain a mix that fits the goal and apply the concept to a financial comparison.",
+      "sentences": [
+        "Asset allocation is how a portfolio is divided among asset types.",
+        "Match the mix to goals, time horizon, and ability to absorb losses.",
+        "Check concentration and overlap.",
+        "A suitable mix still has uncertain returns."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should guide allocation?",
+          "options": [
+            "Only last week's winner",
+            "Only a friend's mix",
+            "Goals, horizon, and loss capacity"
+          ],
+          "answer_index": 2,
+          "explanation": "The portfolio should fit the owner's situation.",
+          "id": "allocation.v1.q1"
+        },
+        {
+          "prompt": "A $100 portfolio with $60 stock exposure has what stock share?",
+          "options": [
+            "160 percent",
+            "60 percent",
+            "40 percent"
+          ],
+          "answer_index": 1,
+          "explanation": "60 divided by 100 is 60 percent.",
+          "id": "allocation.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "diversification"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W316",
+          "chapter": 3,
+          "slot": 8,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B316",
+          "chapter": 3,
+          "slot": 8,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P316",
+          "chapter": 3,
+          "slot": 8,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "rebalancing",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Returning to Your Intended Mix",
+      "objective": "Explain returning to your intended mix and apply the concept to a financial comparison.",
+      "sentences": [
+        "Price changes can move a portfolio away from its intended allocation.",
+        "Rebalancing adjusts the mix toward a chosen plan.",
+        "Consider costs, taxes, and new contributions.",
+        "It is different from constantly chasing recent winners."
+      ],
+      "quiz": [
+        {
+          "prompt": "What is rebalancing intended to do?",
+          "options": [
+            "Pick the next winner",
+            "Restore a planned mix",
+            "Guarantee profit"
+          ],
+          "answer_index": 1,
+          "explanation": "It manages allocation rather than predicting prices.",
+          "id": "rebalancing.v1.q1"
+        },
+        {
+          "prompt": "A $100 portfolio has $70 stocks but a $60 target; excess is what?",
+          "options": [
+            "$10",
+            "$130",
+            "$60"
+          ],
+          "answer_index": 0,
+          "explanation": "Compare current stock value with the target.",
+          "id": "rebalancing.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "allocation"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W216",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B224",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P219",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "income_uncertainty",
+      "version": 1,
+      "category_id": "income",
+      "title": "When Income Changes",
+      "objective": "Explain when income changes and apply the concept to a financial comparison.",
+      "sentences": [
+        "Income can vary or stop while commitments continue.",
+        "Plan using reliable resources and realistic scenarios.",
+        "Accessible reserves and flexible costs can help bridge gaps.",
+        "A high earning period is not a guarantee of future income."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a strong month guarantee the next?",
+          "options": [
+            "No",
+            "Yes",
+            "Only with a contract title"
+          ],
+          "answer_index": 0,
+          "explanation": "Income can change under actual terms and circumstances.",
+          "id": "income_uncertainty.v1.q1"
+        },
+        {
+          "prompt": "A $300 reserve covering $100 of expenses each month lasts how long without other changes?",
+          "options": [
+            "One month",
+            "Six months",
+            "Three months"
+          ],
+          "answer_index": 2,
+          "explanation": "Divide reserves by monthly expenses.",
+          "id": "income_uncertainty.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W301",
+          "chapter": 3,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B301",
+          "chapter": 3,
+          "slot": 1,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P301",
+          "chapter": 3,
+          "slot": 1,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "version": 1,
+      "category_id": "contracts",
+      "title": "Read What You Are Promising",
+      "objective": "Explain read what you are promising and apply the concept to a financial comparison.",
+      "sentences": [
+        "Contracts define payments, duties, timing, and other conditions.",
+        "A headline amount may depend on milestones or other requirements.",
+        "Review exit rules and obligations before agreeing.",
+        "Seek qualified help for terms you do not understand."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a headline contract amount explain all conditions?",
+          "options": [
+            "Yes",
+            "Only if large",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "Terms determine what must happen and when.",
+          "id": "contracts.v1.q1"
+        },
+        {
+          "prompt": "A $1,000 contract pays $400 first; unpaid remainder is what?",
+          "options": [
+            "$400",
+            "$600",
+            "$1,400"
+          ],
+          "answer_index": 1,
+          "explanation": "Subtract the initial payment from the total.",
+          "id": "contracts.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W217",
+          "chapter": 2,
+          "slot": 10,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B302",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P104",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "adviser",
+      "version": 1,
+      "category_id": "contracts",
+      "title": "Advice Has Terms Too",
+      "objective": "Explain advice has terms too and apply the concept to a financial comparison.",
+      "sentences": [
+        "Financial professionals have different roles and compensation.",
+        "Check registration, background, services, fees, and conflicts through appropriate independent sources.",
+        "A professional cannot guarantee market outcomes.",
+        "Understand what you are paying for before agreeing."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you check about an adviser?",
+          "options": [
+            "Only an office address",
+            "Credentials, background, fees, and conflicts",
+            "Only fame"
+          ],
+          "answer_index": 1,
+          "explanation": "Independent checks and terms matter.",
+          "id": "adviser.v1.q1"
+        },
+        {
+          "prompt": "A hypothetical 1 percent fee on $10,000 is what for that calculation?",
+          "options": [
+            "$100",
+            "$1,000",
+            "$10"
+          ],
+          "answer_index": 0,
+          "explanation": "Multiply 10000 by 0.01; actual billing terms may differ.",
+          "id": "adviser.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sec_advisers"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W219",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B303",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P105",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_profit",
+      "version": 1,
+      "category_id": "business",
+      "title": "Revenue Is Not Profit",
+      "objective": "Explain revenue is not profit and apply the concept to a financial comparison.",
+      "sentences": [
+        "Revenue is money earned from sales before expenses.",
+        "Profit subtracts relevant costs under the accounting method used.",
+        "Cash available can differ from either figure because of timing.",
+        "Keep business records that distinguish all three."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is revenue automatically profit?",
+          "options": [
+            "No",
+            "Yes",
+            "Only for small businesses"
+          ],
+          "answer_index": 0,
+          "explanation": "Costs must be considered.",
+          "id": "revenue_profit.v1.q1"
+        },
+        {
+          "prompt": "$500 revenue minus $350 costs leaves what before other expenses and taxes?",
+          "options": [
+            "$850",
+            "$350",
+            "$150"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the stated costs.",
+          "id": "revenue_profit.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W220",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B104",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P220",
+          "chapter": 2,
+          "slot": 12,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "fixed_variable",
+      "version": 1,
+      "category_id": "business",
+      "title": "Costs That Move Differently",
+      "objective": "Explain costs that move differently and apply the concept to a financial comparison.",
+      "sentences": [
+        "Fixed costs do not change directly with each extra unit within a relevant range.",
+        "Variable costs change with activity.",
+        "Both belong in a realistic budget.",
+        "A cost can behave differently at another scale or under another contract."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which is typically variable in a simple production example?",
+          "options": [
+            "A fixed monthly workspace fee",
+            "A fixed software license",
+            "Materials per item"
+          ],
+          "answer_index": 2,
+          "explanation": "Materials increase as more items are produced.",
+          "id": "fixed_variable.v1.q1"
+        },
+        {
+          "prompt": "$5 materials for each of 10 items totals what?",
+          "options": [
+            "$5",
+            "$50",
+            "$15"
+          ],
+          "answer_index": 1,
+          "explanation": "Multiply unit cost by quantity.",
+          "id": "fixed_variable.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W221",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B105",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P221",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "break_even",
+      "version": 1,
+      "category_id": "business",
+      "title": "Covering the Costs",
+      "objective": "Explain covering the costs and apply the concept to a financial comparison.",
+      "sentences": [
+        "Break-even is where revenue covers the stated costs.",
+        "Contribution per unit is price minus variable cost.",
+        "Divide relevant fixed costs by positive contribution to estimate required units.",
+        "Check the assumptions before treating the result as a forecast."
+      ],
+      "quiz": [
+        {
+          "prompt": "What is contribution per unit?",
+          "options": [
+            "Revenue without costs",
+            "Price minus variable cost",
+            "Price plus every debt"
+          ],
+          "answer_index": 1,
+          "explanation": "Contribution helps cover fixed costs.",
+          "id": "break_even.v1.q1"
+        },
+        {
+          "prompt": "$100 fixed cost and $10 contribution per item require how many items to break even?",
+          "options": [
+            "10",
+            "100",
+            "5"
+          ],
+          "answer_index": 0,
+          "explanation": "Divide 100 by 10.",
+          "id": "break_even.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "fixed_variable"
+      ],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W222",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B304",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P222",
+          "chapter": 2,
+          "slot": 13,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "version": 1,
+      "category_id": "business",
+      "title": "A Price That Can Work",
+      "objective": "Explain a price that can work and apply the concept to a financial comparison.",
+      "sentences": [
+        "Pricing should account for costs, customer value, and realistic demand.",
+        "Discounting may increase sales without improving profit.",
+        "Compare the contribution and workload of an offer.",
+        "A higher price also does not guarantee customers will buy."
+      ],
+      "quiz": [
+        {
+          "prompt": "Can a discount increase sales while reducing profit?",
+          "options": [
+            "Yes",
+            "No",
+            "Only for large firms"
+          ],
+          "answer_index": 0,
+          "explanation": "More volume may not cover lower contribution.",
+          "id": "pricing.v1.q1"
+        },
+        {
+          "prompt": "Price $50 minus variable cost $30 gives what contribution?",
+          "options": [
+            "$80",
+            "$30",
+            "$20"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract variable cost from price.",
+          "id": "pricing.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "revenue_profit"
+      ],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W223",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B106",
+          "chapter": 1,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P223",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "receivables",
+      "version": 1,
+      "category_id": "business",
+      "title": "An Invoice Is Not Cash",
+      "objective": "Explain an invoice is not cash and apply the concept to a financial comparison.",
+      "sentences": [
+        "Accounts receivable are amounts customers owe.",
+        "They are not already available bank funds.",
+        "Payment timing, clear terms, and follow-up affect cash flow.",
+        "Do not spend an expected receipt as though it has cleared."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is an unpaid invoice spendable bank cash?",
+          "options": [
+            "Yes",
+            "Only after printing it",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "It is a claim to payment, not cleared cash.",
+          "id": "receivables.v1.q1"
+        },
+        {
+          "prompt": "$600 invoiced with $200 collected leaves what receivable?",
+          "options": [
+            "$200",
+            "$400",
+            "$800"
+          ],
+          "answer_index": 1,
+          "explanation": "Subtract collected money from the invoice.",
+          "id": "receivables.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W224",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B108",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P224",
+          "chapter": 2,
+          "slot": 14,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "working_capital",
+      "version": 1,
+      "category_id": "business",
+      "title": "Funding the Gap",
+      "objective": "Explain funding the gap and apply the concept to a financial comparison.",
+      "sentences": [
+        "Operations may require cash before a customer pays.",
+        "Forecast the gap between receipts and required payments.",
+        "A large contract can create pressure despite expected profit.",
+        "Compare deposits, phased work, reserves, and financing under clear terms."
+      ],
+      "quiz": [
+        {
+          "prompt": "Can a profitable contract cause a cash shortage?",
+          "options": [
+            "Only when free",
+            "Yes",
+            "No"
+          ],
+          "answer_index": 1,
+          "explanation": "Costs can arrive before receipts.",
+          "id": "working_capital.v1.q1"
+        },
+        {
+          "prompt": "$500 upfront costs with $300 available leaves what gap?",
+          "options": [
+            "$200",
+            "$800",
+            "$300"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract available cash from required cost.",
+          "id": "working_capital.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W302",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B109",
+          "chapter": 1,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P302",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "debt_equity",
+      "version": 1,
+      "category_id": "business",
+      "title": "Borrowing or Sharing Ownership",
+      "objective": "Explain borrowing or sharing ownership and apply the concept to a financial comparison.",
+      "sentences": [
+        "Debt creates repayment obligations under terms.",
+        "Equity gives an ownership interest and can change control and future profit shares.",
+        "Compare costs, risk, flexibility, and expectations.",
+        "Neither source is free money."
+      ],
+      "quiz": [
+        {
+          "prompt": "What does equity financing exchange?",
+          "options": [
+            "An ownership interest",
+            "A guaranteed gift",
+            "Nothing"
+          ],
+          "answer_index": 0,
+          "explanation": "Investors receive an interest under agreed terms.",
+          "id": "debt_equity.v1.q1"
+        },
+        {
+          "prompt": "Does borrowing ordinarily require repayment under terms?",
+          "options": [
+            "No",
+            "Only when profitable",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "Debt creates obligations independent of hoped-for success.",
+          "id": "debt_equity.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W303",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B306",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P303",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "dilution",
+      "version": 1,
+      "category_id": "business",
+      "title": "A Smaller Slice of a Changed Pie",
+      "objective": "Explain a smaller slice of a changed pie and apply the concept to a financial comparison.",
+      "sentences": [
+        "Issuing ownership interests can reduce an existing owner's percentage.",
+        "The business may gain resources in exchange.",
+        "Consider valuation, control, and agreement terms.",
+        "A smaller percentage is not automatically a worse outcome."
+      ],
+      "quiz": [
+        {
+          "prompt": "What is ownership dilution?",
+          "options": [
+            "A bank fee",
+            "Guaranteed business failure",
+            "A reduction in an existing percentage interest"
+          ],
+          "answer_index": 2,
+          "explanation": "New ownership can change relative shares.",
+          "id": "dilution.v1.q1"
+        },
+        {
+          "prompt": "If 100 old shares remain and 100 new shares are issued, the old shares represent what of 200 total?",
+          "options": [
+            "25 percent",
+            "50 percent",
+            "100 percent"
+          ],
+          "answer_index": 1,
+          "explanation": "100 divided by 200 equals half.",
+          "id": "dilution.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "debt_equity"
+      ],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W304",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B307",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P304",
+          "chapter": 3,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "separate_funds",
+      "version": 1,
+      "category_id": "business",
+      "title": "Business Money and Personal Money",
+      "objective": "Explain business money and personal money and apply the concept to a financial comparison.",
+      "sentences": [
+        "Business and personal funds serve different responsibilities.",
+        "Record transfers between them clearly.",
+        "An owner draw is not a new customer sale.",
+        "A business account balance is not automatically money safe to spend personally."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is an owner draw a new sale?",
+          "options": [
+            "Only above $100",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "It transfers existing funds.",
+          "id": "separate_funds.v1.q1"
+        },
+        {
+          "prompt": "$500 business cash with a $100 draw leaves what business cash before other changes?",
+          "options": [
+            "$400",
+            "$600",
+            "$100"
+          ],
+          "answer_index": 0,
+          "explanation": "The personal account receives the same transfer; combined cash is unchanged.",
+          "id": "separate_funds.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W306",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B111",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P306",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "tax_reserve",
+      "version": 1,
+      "category_id": "tax",
+      "title": "Setting Aside Is Not Paying Tax",
+      "objective": "Explain setting aside is not paying tax and apply the concept to a financial comparison.",
+      "sentences": [
+        "Income without sufficient withholding can create a future tax obligation.",
+        "Keep records and estimate using qualified help and applicable rules.",
+        "A reserve is money set aside, not a tax payment or a deduction by itself.",
+        "Review the estimate when income changes."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does moving money to a reserve mean tax is paid?",
+          "options": [
+            "No",
+            "Yes",
+            "Only if labeled tax"
+          ],
+          "answer_index": 0,
+          "explanation": "A reserve remains an asset until an actual payment.",
+          "id": "tax_reserve.v1.q1"
+        },
+        {
+          "prompt": "Moving $40 from $200 into a reserve leaves unrestricted cash of what?",
+          "options": [
+            "$240",
+            "$40",
+            "$160"
+          ],
+          "answer_index": 2,
+          "explanation": "The combined cash remains $200.",
+          "id": "tax_reserve.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W305",
+          "chapter": 3,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B305",
+          "chapter": 3,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P305",
+          "chapter": 3,
+          "slot": 3,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "balance_sheet",
+      "version": 1,
+      "category_id": "business",
+      "title": "What Is Owned and Owed",
+      "objective": "Explain what is owned and owed and apply the concept to a financial comparison.",
+      "sentences": [
+        "A balance sheet summarizes assets, liabilities, and equity at a point in time.",
+        "Cash is only one asset.",
+        "Loans and unpaid obligations belong among liabilities.",
+        "Profit over a period is a different measure."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a balance sheet describe only cash?",
+          "options": [
+            "Yes",
+            "Only for a small firm",
+            "No"
+          ],
+          "answer_index": 2,
+          "explanation": "It includes other assets and liabilities.",
+          "id": "balance_sheet.v1.q1"
+        },
+        {
+          "prompt": "$1,000 assets minus $600 liabilities gives what equity?",
+          "options": [
+            "$600",
+            "$400",
+            "$1,600"
+          ],
+          "answer_index": 1,
+          "explanation": "Subtract liabilities from assets.",
+          "id": "balance_sheet.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "sba_finance"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W307",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B112",
+          "chapter": 1,
+          "slot": 8,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P307",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "sunk_cost",
+      "version": 1,
+      "category_id": "decisions",
+      "title": "What Matters From Here",
+      "objective": "Explain what matters from here and apply the concept to a financial comparison.",
+      "sentences": [
+        "A sunk cost has already been incurred and cannot be recovered by the next decision.",
+        "It does not by itself justify more spending.",
+        "Compare future costs, benefits, and alternatives.",
+        "Changing direction can be reasonable when information changes."
+      ],
+      "quiz": [
+        {
+          "prompt": "Should past spending alone force another purchase?",
+          "options": [
+            "Only if embarrassing",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "The next decision depends on future consequences.",
+          "id": "sunk_cost.v1.q1"
+        },
+        {
+          "prompt": "A $20 research trip does not provide how much of a new $100 payment?",
+          "options": [
+            "Any of the new $100",
+            "Exactly $20",
+            "Exactly $80"
+          ],
+          "answer_index": 0,
+          "explanation": "The earlier cost is not available money.",
+          "id": "sunk_cost.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W308",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B308",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P308",
+          "chapter": 3,
+          "slot": 4,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C318",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "real_estate",
+      "version": 1,
+      "category_id": "housing",
+      "title": "Property Is an Investment Too",
+      "objective": "Explain property is an investment too and apply the concept to a financial comparison.",
+      "sentences": [
+        "Property can have income, costs, debt, and uncertain value.",
+        "Maintenance, vacancies, fees, taxes, and insurance affect results.",
+        "Selling can take time and cost money.",
+        "A rental headline is not guaranteed profit or ready cash."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is advertised rent the same as profit?",
+          "options": [
+            "No",
+            "Yes",
+            "Only with tenants"
+          ],
+          "answer_index": 0,
+          "explanation": "Expenses and financing must be considered.",
+          "id": "real_estate.v1.q1"
+        },
+        {
+          "prompt": "$1,000 rent minus $700 stated costs leaves what before other items?",
+          "options": [
+            "$1,700",
+            "$700",
+            "$300"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract the stated costs.",
+          "id": "real_estate.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W310",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B310",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P310",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "giving",
+      "version": 1,
+      "category_id": "planning",
+      "title": "Giving With a Plan",
+      "objective": "Explain giving with a plan and apply the concept to a financial comparison.",
+      "sentences": [
+        "Giving can reflect personal values and support others.",
+        "Verify the recipient and any conditions.",
+        "Choose an amount that fits obligations and resources.",
+        "Do not assume every donation creates a tax benefit."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you verify before donating?",
+          "options": [
+            "Only an urgent message",
+            "Only a celebrity endorsement",
+            "The recipient and use of funds"
+          ],
+          "answer_index": 2,
+          "explanation": "Check independently that the recipient is legitimate.",
+          "id": "giving.v1.q1"
+        },
+        {
+          "prompt": "A $15 gift from $60 leaves what?",
+          "options": [
+            "$15",
+            "$45",
+            "$75"
+          ],
+          "answer_index": 1,
+          "explanation": "Subtract the gift.",
+          "id": "giving.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W311",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B311",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P311",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "boundaries",
+      "version": 1,
+      "category_id": "decisions",
+      "title": "Helping Without Overpromising",
+      "objective": "Explain helping without overpromising and apply the concept to a financial comparison.",
+      "sentences": [
+        "Support can involve money, time, or practical help.",
+        "Check your own commitments before promising money.",
+        "Clarify whether money is a gift or loan.",
+        "Declining a payment does not mean you cannot care about someone."
+      ],
+      "quiz": [
+        {
+          "prompt": "Must helpful support always involve money?",
+          "options": [
+            "Only for family",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "Time and practical help can matter.",
+          "id": "boundaries.v1.q1"
+        },
+        {
+          "prompt": "A $25 gift from $100 leaves what?",
+          "options": [
+            "$75",
+            "$125",
+            "$25"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the gift.",
+          "id": "boundaries.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W312",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B312",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P312",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C310",
+          "chapter": 3,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "liquidity",
+      "version": 1,
+      "category_id": "saving",
+      "title": "Accessible When Needed",
+      "objective": "Explain accessible when needed and apply the concept to a financial comparison.",
+      "sentences": [
+        "Liquidity describes how readily an asset can be turned into usable money.",
+        "Selling may take time or expose you to a loss.",
+        "A valuable asset is not always suitable for an imminent bill.",
+        "Match accessible resources with payment timing."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does a valuable asset always solve a bill due today?",
+          "options": [
+            "No",
+            "Yes",
+            "Only if called an investment"
+          ],
+          "answer_index": 0,
+          "explanation": "Access and timing matter.",
+          "id": "liquidity.v1.q1"
+        },
+        {
+          "prompt": "$80 accessible cash against a $100 bill leaves what gap?",
+          "options": [
+            "$180",
+            "$80",
+            "$20"
+          ],
+          "answer_index": 2,
+          "explanation": "Subtract accessible money from the bill.",
+          "id": "liquidity.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W313",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B313",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P313",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "guaranteed_return",
+      "version": 1,
+      "category_id": "security",
+      "title": "The Too-Good Promise",
+      "objective": "Explain the too-good promise and apply the concept to a financial comparison.",
+      "sentences": [
+        "High returns without risk are a warning sign.",
+        "Check the investment and promoter independently.",
+        "Secrecy, urgency, and recruitment pressure deserve scrutiny.",
+        "Choosing not to send money preserves options while you investigate."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which is a warning sign?",
+          "options": [
+            "Clear discussion of losses",
+            "Time to review documents",
+            "Guaranteed high return with no risk"
+          ],
+          "answer_index": 2,
+          "explanation": "The promise hides or denies risk.",
+          "id": "guaranteed_return.v1.q1"
+        },
+        {
+          "prompt": "Does a testimonial establish that returns are guaranteed?",
+          "options": [
+            "Only on video",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "A testimonial is not a guarantee or independent verification.",
+          "id": "guaranteed_return.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W314",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B314",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P314",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "version": 1,
+      "category_id": "investing",
+      "title": "Measuring the Whole Result",
+      "objective": "Explain measuring the whole result and apply the concept to a financial comparison.",
+      "sentences": [
+        "Performance includes income and value changes over a stated period.",
+        "Compare costs and relevant risk as well as returns.",
+        "Deposits are not investment gains.",
+        "Distinguish realized results from changes in holdings not sold."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is a new contribution an investment return?",
+          "options": [
+            "Only in a portfolio",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "It is money added by the owner.",
+          "id": "performance.v1.q1"
+        },
+        {
+          "prompt": "A $100 holding plus a $20 contribution ends at $125; gain before other adjustments is what?",
+          "options": [
+            "$5",
+            "$25",
+            "$20"
+          ],
+          "answer_index": 0,
+          "explanation": "Subtract the starting amount and added contribution.",
+          "id": "performance.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [
+        "saving_investing"
+      ],
+      "source_ids": [
+        "sec_products",
+        "sec_allocation"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W315",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B315",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P315",
+          "chapter": 3,
+          "slot": 7,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "beneficiaries",
+      "version": 1,
+      "category_id": "planning",
+      "title": "Keeping Important Details Current",
+      "objective": "Explain keeping important details current and apply the concept to a financial comparison.",
+      "sentences": [
+        "Some accounts and policies use beneficiary designations.",
+        "Review them when circumstances change.",
+        "Estate documents and account rules can interact in ways requiring qualified help.",
+        "A will alone does not explain every account's treatment."
+      ],
+      "quiz": [
+        {
+          "prompt": "What can a beneficiary review help check?",
+          "options": [
+            "Who is designated under applicable terms",
+            "Guaranteed investment profit",
+            "Your credit-card limit"
+          ],
+          "answer_index": 0,
+          "explanation": "Designations affect specified account or policy arrangements.",
+          "id": "beneficiaries.v1.q1"
+        },
+        {
+          "prompt": "Should important changes prompt a review?",
+          "options": [
+            "Never",
+            "Only after retirement",
+            "Yes"
+          ],
+          "answer_index": 2,
+          "explanation": "Relevant life changes can make old instructions unsuitable.",
+          "id": "beneficiaries.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W317",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B317",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P317",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "simple_interest",
+      "version": 1,
+      "category_id": "borrowing",
+      "title": "A Clear Interest Example",
+      "objective": "Explain a clear interest example and apply the concept to a financial comparison.",
+      "sentences": [
+        "Simple interest uses principal, rate, and time under stated assumptions.",
+        "Real agreements may use different calculation methods or include fees.",
+        "Read the applicable formula and schedule.",
+        "An illustration is not a quote for an actual product."
+      ],
+      "quiz": [
+        {
+          "prompt": "What inputs does simple interest use?",
+          "options": [
+            "Only a monthly payment",
+            "Only a brand",
+            "Principal, rate, and time"
+          ],
+          "answer_index": 2,
+          "explanation": "The calculation requires all three inputs.",
+          "id": "simple_interest.v1.q1"
+        },
+        {
+          "prompt": "$100 at 5 percent simple annual interest for one year produces what interest?",
+          "options": [
+            "$105",
+            "$5",
+            "$50"
+          ],
+          "answer_index": 1,
+          "explanation": "Multiply 100 by 0.05 by 1.",
+          "id": "simple_interest.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W318",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B318",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P318",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "deposit_protection",
+      "version": 1,
+      "category_id": "banking",
+      "title": "Know What Is Protected",
+      "objective": "Explain know what is protected and apply the concept to a financial comparison.",
+      "sentences": [
+        "Eligible bank or credit-union deposits can have government-backed insurance subject to coverage rules.",
+        "Check the institution, ownership category, and applicable limits.",
+        "Stocks and funds are not insured deposits merely because an app offers them.",
+        "Brokerage protection does not insure ordinary market losses."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is a stock an insured bank deposit?",
+          "options": [
+            "Only in a familiar app",
+            "No",
+            "Yes"
+          ],
+          "answer_index": 1,
+          "explanation": "Product type matters.",
+          "id": "deposit_protection.v1.q1"
+        },
+        {
+          "prompt": "What should you verify about deposit protection?",
+          "options": [
+            "Institution and applicable coverage rules",
+            "Only the logo",
+            "Only an interest advertisement"
+          ],
+          "answer_index": 0,
+          "explanation": "Coverage depends on the institution and arrangement.",
+          "id": "deposit_protection.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W319",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        },
+        {
+          "character": "business",
+          "event_id": "B319",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        },
+        {
+          "character": "athlete",
+          "event_id": "P319",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "risk_review",
+      "version": 1,
+      "category_id": "planning",
+      "title": "A Sustainable Next Chapter",
+      "objective": "Explain a sustainable next chapter and apply the concept to a financial comparison.",
+      "sentences": [
+        "A financial review should test what happens if income changes or a cost arrives early.",
+        "Check accessible reserves, commitments, protection, and concentrated risks.",
+        "A plan can be revised without erasing what you learned.",
+        "Financial progress should support a sustainable life."
+      ],
+      "quiz": [
+        {
+          "prompt": "What makes a useful final plan?",
+          "options": [
+            "Testing realistic changes and commitments",
+            "Assuming income always rises",
+            "Counting hoped-for gains as cash"
+          ],
+          "answer_index": 0,
+          "explanation": "A workable plan leaves room for uncertainty.",
+          "id": "risk_review.v1.q1"
+        },
+        {
+          "prompt": "Two months of $100 necessities require what before other costs?",
+          "options": [
+            "$100",
+            "$50",
+            "$200"
+          ],
+          "answer_index": 2,
+          "explanation": "Multiply the monthly cost by two.",
+          "id": "risk_review.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "cfpb_youth",
+        "fdic_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "adult",
+          "event_id": "W320",
+          "chapter": 3,
+          "slot": 10,
+          "required": true
+        },
+        {
+          "character": "business",
+          "event_id": "B320",
+          "chapter": 3,
+          "slot": 10,
+          "required": true
+        },
+        {
+          "character": "athlete",
+          "event_id": "P320",
+          "chapter": 3,
+          "slot": 10,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "college_scholarship",
+      "version": 1,
+      "category_id": "income",
+      "title": "A Scholarship Application",
+      "objective": "Distinguish grants and scholarships from loans.",
+      "sentences": [
+        "Scholarships and grants generally do not require repayment when their conditions are met.",
+        "Loans must be repaid under their terms.",
+        "Check eligibility, deadlines, and renewal requirements before relying on an award.",
+        "Applying does not guarantee receiving money."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which normally needs repayment?",
+          "explanation": "Loans are borrowed funds.",
+          "options": [
+            "A loan",
+            "An eligible scholarship used under its conditions",
+            "A grant used under its conditions"
+          ],
+          "answer_index": 0,
+          "id": "college_scholarship.v1.q1"
+        },
+        {
+          "prompt": "Is an application the same as a confirmed award?",
+          "explanation": "Budget with confirmed resources rather than hoped-for awards.",
+          "options": [
+            "Yes, always",
+            "Only if submitted early",
+            "No"
+          ],
+          "answer_index": 2,
+          "id": "college_scholarship.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C117",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_resale",
+      "version": 1,
+      "category_id": "spending",
+      "title": "Selling What You No Longer Use",
+      "objective": "Account for selling costs and safe payment.",
+      "sentences": [
+        "Selling an unused item can free money without adding work hours.",
+        "Sale proceeds are not the same as profit from a business.",
+        "Account for fees and check that payment is genuine.",
+        "Use safe exchange methods rather than trusting a payment screenshot."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you verify before handing over an item?",
+          "explanation": "Screenshots can be misleading.",
+          "options": [
+            "A buyer's screenshot alone",
+            "A promise of later payment",
+            "Payment actually received"
+          ],
+          "answer_index": 2,
+          "id": "college_resale.v1.q1"
+        },
+        {
+          "prompt": "A sale is $30 with a $5 fee; what do you receive?",
+          "explanation": "Subtract the fee from the sale proceeds.",
+          "options": [
+            "$30",
+            "$25",
+            "$35"
+          ],
+          "answer_index": 1,
+          "id": "college_resale.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C118",
+          "chapter": 1,
+          "slot": 11,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_preparation",
+      "version": 1,
+      "category_id": "decisions",
+      "title": "Before the First Final",
+      "objective": "Plan time alongside financial commitments.",
+      "sentences": [
+        "A useful plan accounts for deadlines as well as spending.",
+        "Preparation can reduce last-minute pressure.",
+        "Paid help is not automatically better than free support.",
+        "Choose resources that fit the task and your schedule."
+      ],
+      "quiz": [
+        {
+          "prompt": "What can a plan include besides money?",
+          "explanation": "Time planning supports realistic commitments.",
+          "options": [
+            "Time and deadlines",
+            "Guaranteed exam results",
+            "Only purchases"
+          ],
+          "answer_index": 0,
+          "id": "college_preparation.v1.q1"
+        },
+        {
+          "prompt": "You need four study hours and finish one; how many remain?",
+          "explanation": "Subtract completed time from the plan.",
+          "options": [
+            "Five",
+            "One",
+            "Three"
+          ],
+          "answer_index": 2,
+          "id": "college_preparation.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C123",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        },
+        {
+          "character": "college",
+          "event_id": "C124",
+          "chapter": 1,
+          "slot": 14,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_financial_aid",
+      "version": 1,
+      "category_id": "income",
+      "title": "What Your Aid Actually Covers",
+      "objective": "Distinguish confirmed grants, loans, and unmet costs.",
+      "sentences": [
+        "An aid offer can combine grants, scholarships, work-study, and loans.",
+        "Loans create repayment obligations, while other awards have their own conditions.",
+        "Compare confirmed aid with the full education cost.",
+        "Contact the aid office when an item or condition is unclear."
+      ],
+      "quiz": [
+        {
+          "prompt": "Which aid is borrowed money?",
+          "explanation": "A loan creates a repayment obligation.",
+          "options": [
+            "A student loan",
+            "A qualifying grant used correctly",
+            "A qualifying scholarship used correctly"
+          ],
+          "answer_index": 0,
+          "id": "college_financial_aid.v1.q1"
+        },
+        {
+          "prompt": "Costs are $1,000 and confirmed grant aid is $700; what remains before other funding?",
+          "explanation": "Subtract confirmed aid from costs.",
+          "options": [
+            "$700",
+            "$1,700",
+            "$300"
+          ],
+          "answer_index": 2,
+          "id": "college_financial_aid.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C201",
+          "chapter": 2,
+          "slot": 1,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "college_human_capital",
+      "version": 1,
+      "category_id": "income",
+      "title": "Learning a Skill for Work",
+      "objective": "Compare training cost with uncertain future value.",
+      "sentences": [
+        "Training can build useful skills but does not guarantee a job.",
+        "Compare price, quality, time, and relevance.",
+        "Free resources may teach the same skill as a paid course.",
+        "Judge a course by what it helps you do rather than a promised salary."
+      ],
+      "quiz": [
+        {
+          "prompt": "Does paying for a course guarantee higher income?",
+          "explanation": "Training outcomes remain uncertain.",
+          "options": [
+            "No",
+            "Yes",
+            "Only if the advertisement says so"
+          ],
+          "answer_index": 0,
+          "id": "college_human_capital.v1.q1"
+        },
+        {
+          "prompt": "A $40 course and $10 materials total what?",
+          "explanation": "Include required materials.",
+          "options": [
+            "$40",
+            "$30",
+            "$50"
+          ],
+          "answer_index": 2,
+          "id": "college_human_capital.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C204",
+          "chapter": 2,
+          "slot": 2,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_housing",
+      "version": 1,
+      "category_id": "planning",
+      "title": "Next Year's Address",
+      "objective": "Compare full housing costs and commitments.",
+      "sentences": [
+        "Housing cost includes more than advertised rent.",
+        "Utilities, deposits, transport, furniture, and lease terms can change affordability.",
+        "A refundable deposit ties up money even when it is not an expense.",
+        "Compare the full arrangement before signing."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should you add to advertised rent?",
+          "explanation": "The full cost determines affordability.",
+          "options": [
+            "Nothing",
+            "Only decorations",
+            "Required utilities and other housing costs"
+          ],
+          "answer_index": 2,
+          "id": "college_housing.v1.q1"
+        },
+        {
+          "prompt": "Rent is $500 and utilities $80; monthly cost is what?",
+          "explanation": "Add rent and utilities.",
+          "options": [
+            "$420",
+            "$580",
+            "$500"
+          ],
+          "answer_index": 1,
+          "id": "college_housing.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C205",
+          "chapter": 2,
+          "slot": 3,
+          "required": true
+        },
+        {
+          "character": "college",
+          "event_id": "C317",
+          "chapter": 3,
+          "slot": 9,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_shared_costs",
+      "version": 1,
+      "category_id": "housing",
+      "title": "The Roommate Agreement",
+      "objective": "Clarify responsibilities before sharing costs.",
+      "sentences": [
+        "Shared expenses need clear agreements.",
+        "Discuss who pays, when money is due, and how changes will be handled.",
+        "A friendly promise is not a substitute for understanding a lease.",
+        "Agreeing early can prevent confusion without guaranteeing there will never be conflict."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should roommates clarify?",
+          "explanation": "Clear responsibilities reduce misunderstandings.",
+          "options": [
+            "Only who asked first",
+            "Amounts, due dates, and responsibilities",
+            "Only room colors"
+          ],
+          "answer_index": 1,
+          "id": "college_shared_costs.v1.q1"
+        },
+        {
+          "prompt": "A shared $60 item split equally between two people costs each what?",
+          "explanation": "Divide by two.",
+          "options": [
+            "$30",
+            "$60",
+            "$120"
+          ],
+          "answer_index": 0,
+          "id": "college_shared_costs.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C206",
+          "chapter": 2,
+          "slot": 4,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_gig_income",
+      "version": 1,
+      "category_id": "business",
+      "title": "A Side-Gig Offer",
+      "objective": "Distinguish revenue from expenses and uncertain tax obligations.",
+      "sentences": [
+        "Gig income may arrive without automatic tax withholding.",
+        "Track payments and related expenses.",
+        "Revenue is the amount received before subtracting costs.",
+        "Set aside records and get reliable help with applicable taxes."
+      ],
+      "quiz": [
+        {
+          "prompt": "A client payment before costs is what?",
+          "explanation": "Costs still need to be considered.",
+          "options": [
+            "Guaranteed profit",
+            "A tax refund",
+            "Revenue"
+          ],
+          "answer_index": 2,
+          "id": "college_gig_income.v1.q1"
+        },
+        {
+          "prompt": "A $50 payment needs $10 materials; what remains before taxes?",
+          "explanation": "Subtract materials; tax treatment is a separate issue.",
+          "options": [
+            "$50",
+            "$40",
+            "$60"
+          ],
+          "answer_index": 1,
+          "id": "college_gig_income.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C211",
+          "chapter": 2,
+          "slot": 6,
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "college_summer_plan",
+      "version": 1,
+      "category_id": "income",
+      "title": "Choose Your Summer",
+      "objective": "Choose a sustainable income and time arrangement.",
+      "sentences": [
+        "A workable plan balances income with costs and commitments.",
+        "Higher earnings can require more time or effort.",
+        "Compare realistic take-home pay and necessary expenses.",
+        "Your choice can be revised when circumstances change."
+      ],
+      "quiz": [
+        {
+          "prompt": "What should guide a summer work choice?",
+          "explanation": "The best fit depends on several priorities.",
+          "options": [
+            "Income, costs, commitments, and goals",
+            "Only the largest number",
+            "Only a friend's preference"
+          ],
+          "answer_index": 0,
+          "id": "college_summer_plan.v1.q1"
+        },
+        {
+          "prompt": "A $180 fortnightly take-home payment minus $140 necessities leaves what?",
+          "explanation": "Subtract the necessities from take-home pay.",
+          "options": [
+            "$320",
+            "$140",
+            "$40"
+          ],
+          "answer_index": 2,
+          "id": "college_summer_plan.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C225",
+          "chapter": 2,
+          "slot": 15,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "college_long_term_plan",
+      "version": 1,
+      "category_id": "retirement",
+      "title": "A Plan Longer Than One Summer",
+      "objective": "Connect diversification, compounding, and retirement account concepts.",
+      "sentences": [
+        "Long-term investing combines contributions, time, costs, and uncertain returns.",
+        "Compound growth includes returns on earlier returns, but actual investment results fluctuate.",
+        "Retirement accounts have eligibility and tax rules and can hold investments rather than being investments themselves.",
+        "Build a plan around goals and diversified exposure instead of promised growth."
+      ],
+      "quiz": [
+        {
+          "prompt": "Is a retirement account itself the same as an ETF?",
+          "explanation": "An account is a container with rules, not a particular holding.",
+          "options": [
+            "Yes",
+            "Only after age 30",
+            "No; the account may hold investments"
+          ],
+          "answer_index": 2,
+          "id": "college_long_term_plan.v1.q1"
+        },
+        {
+          "prompt": "In a purely hypothetical two-year example, $100 grows 10 percent each year; value becomes what?",
+          "explanation": "100 becomes 110, then 110 times 1.10 is 121; real returns are not fixed.",
+          "options": [
+            "$110",
+            "$121",
+            "$120"
+          ],
+          "answer_index": 1,
+          "id": "college_long_term_plan.v1.q2"
+        }
+      ],
+      "difficulty": "foundation",
+      "prerequisites": [],
+      "source_ids": [
+        "fdic_youth",
+        "cfpb_youth"
+      ],
+      "event_refs": [
+        {
+          "character": "college",
+          "event_id": "C316",
+          "chapter": 3,
+          "slot": 8,
+          "required": true
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfpb_youth",
+      "title": "CFPB financial knowledge and decision-making",
+      "url": "https://www.consumerfinance.gov/consumer-tools/educator-tool/youth-financial-education/learn/financial-knowledge-decision-making-skills/"
+    },
+    {
+      "id": "fdic_youth",
+      "title": "FDIC Money Smart for Young Adults",
+      "url": "https://www.fdic.gov/consumer-resource-center/money-smart-young-adults"
+    },
+    {
+      "id": "sec_products",
+      "title": "SEC investment products",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products"
+    },
+    {
+      "id": "sec_allocation",
+      "title": "SEC asset allocation and diversification",
+      "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    },
+    {
+      "id": "sec_advisers",
+      "title": "SEC investment advisers",
+      "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
+    },
+    {
+      "id": "sba_finance",
+      "title": "SBA manage your business",
+      "url": "https://www.sba.gov/counseling/manage-your-business/"
+    },
+    {
+      "id": "cfpb_grace",
+      "title": "CFPB credit card grace periods",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-grace-period-for-a-credit-card-en-47/"
+    }
+  ],
+  "reward_policy": {
+    "key": [
+      "playerId",
+      "lessonId",
+      "version",
+      "questionId"
+    ],
+    "first_attempt_ficoins": 5,
+    "questions": 2,
+    "review_reward": 0
+  },
+  "name_tokens": {
+    "college": "{collegeName}",
+    "adult": "{adultName}",
+    "business": "{businessName}",
+    "athlete": "{athleteName}"
+  }
+}
